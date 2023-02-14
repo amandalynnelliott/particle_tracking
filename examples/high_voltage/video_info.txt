@@ -1,0 +1,9 @@
+Frames per second (recorded): 1000
+Pixels to microns (1.64cm/(d1 [cm])): 11.44
+Beam voltage (V): 120
+Beam current (mA): 10
+Dust density (%): 100
+Camera Angle Boolean (-1: calculate angle, otherwise use specified angle in degrees): -1
+d2 (px): 117
+d1 (px): 1434
+depth of field (px): 23

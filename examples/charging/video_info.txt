@@ -1,0 +1,10 @@
+Frames per second (recorded): 900
+Pixels to microns (1.64cm/(d1 [px]))*10^(4) --> [um]: 13.4
+Beam voltage (V): 0
+Beam current (mA): 0
+Dust density (%): 0
+Camera Angle (-1: calculate angle, otherwise use specified angle in degrees): 79 
+d2 (px) INACCURATE: 0
+d1 (px) INACCURATE: 0
+depth of field (px) INACCURATE: 0
+

@@ -56,7 +56,7 @@ Edit the `video_info.txt` file and put it in the home directory for the video. F
 
 ```text
 Frames per second (recorded): 900
-Pixels to microns (1.64cm/(d1 [px]))*10^(4) --> [um]: 13.4
+Pixels to microns (1.64cm/(d1 [px]))*10^(4) --> [um]: 11.01
 Beam voltage (V): 80
 Beam current (mA): 8
 Dust density (%): 80
@@ -75,8 +75,9 @@ Each property is described below:
 - `pixels to microns` is for proper scaling and size calculation. For this example, the dust sample is a circle of 1.64 cm, which in the video takes up 1489 pixels. Then the input is (1.64 cm / 1489) * 10^4 = 11.01 microns per pixel. 
 - `beam voltage` and `beam current` are the values that the dust was charged to.
 - `dust density` is the amount of dust coverage on the surface, as a percentage.
-- `high voltage` is the amount of voltage applied to generate the external electric field when the lofting occured. 
-- `camera angle` is `-1` if you want the script to calculate the angle from the given diameters of the circular dust sample, `d1` and `d2`. Otherwise, give the angle in degrees of the camera *with respect to vertical*. For the example, the camera is 11 degrees from horizontal, and so is 90 - 11 = 79 degrees. 
+- `high voltage` is the amount of voltage applied to generate the external electric field when the lofting occured, in kiloVolts.
+- `camera angle` is `-1` if you want the script to calculate the angle from the given diameters of the circular dust sample, `d1` and `d2`. Otherwise, give the angle in degrees of the camera *with respect to vertical*. For the example, the camera is 11 degrees from horizontal, and so it is 90 - 11 = 79 degrees. 
+**If a circular dust sample was not used, these last three properties can be set to zero.**
 - `d2` is the short (vertical) diameter of the circular dust sample (see image below).
 - `d1` is the long (horizontal) diameter of the circular dust sample, which is also used to calculate `pixels to microns`.
 - `depth of field` is the height of the in-focus pixels. This is used to calculate the in-focus area of the circular dust sample.
@@ -85,7 +86,7 @@ Each property is described below:
 
 ### 2. Clip the video to individual lofting events
 
-The scripts works best if only 20-30 frames are run at one time. The main directory for the video should contain the `video_info.txt` file. Cut the video to smaller clips and save them to separate folders in this main directory. There is a `video_goes_here` file where a video clip would go. (The video was too large to be uploaded to GitHub.)
+The scripts works best if only 20-30 frames are run at one time. The main directory for the video should contain the `video_info.txt` file. Cut the video to smaller clips and save them to separate folders in this main directory. There is a `video_goes_here` file where a video clip would go. (Example videos are too large to be uploaded to GitHub.)
 
 **The following Steps (3-5) would need to be repeated for each of the individual video clips.**
 
@@ -97,7 +98,7 @@ Run the following command.
 python video_to_frames.py <directory> <video file name> --contrast <value>
 ```
 
-Now the video image frames will be in the same directory as the video file. These frames are the input for the particle tracking script.
+Now the video image frames will be in the same directory as the video file. These jpeg frames are the input for the particle tracking script.
 
 #### Increase Contrast
 
@@ -125,7 +126,7 @@ The optional input parameters are described below.
 
 `<dust size threshold>` is used for calculating the size of lofted particles. The default value is 5. If the size of the lofted particle is too small, increase this value. If the calculated size is too large, decrease it. The size calculation can be checked by using the next argument.
 
-`--sizes` is an optional command line argument to verify the size calculation of the lofted particles. `<size start>` and `<size end>` specify the range of frames that you want to view the brightness maps for. **The brightness map and the corresponding original frame (like the image below) will appear after the script has completed tracking.** You can zoom in on the bright yellow region that is the region that the script calculated the particle size to be and compare it with the unedited frame. The script currently does not automatically save brightness maps, but just shows them. Here is an example plot:
+`--sizes` is an optional command line argument to verify the size calculation of the lofted particles. `<size start>` and `<size end>` specify the range of frames that you want to view the brightness maps for. **The brightness map and the corresponding original frame (like the image below) will appear after the script has completed tracking all of the frames.** You can zoom in on the bright yellow region that the script calculated the particle size to be and compare it with the unedited frame. The script currently does not automatically save brightness map plots, but just shows them. Here is an example plot:
 
 ![brightness plot for size calculation result](figs/brightness_Kelyan_11_14_2022_clip2.png)
 

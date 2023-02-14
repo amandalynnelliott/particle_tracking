@@ -343,8 +343,7 @@ for N in range(0, frames_end - frames_start + 1):
         for v_current in velocities:
             for v_prev in velocities:
                 if(v_current["position_prev"] == v_prev["position"]):
-                    # dv = v_current["velocity"] - v_prev["velocity"]
-                    # dv_x = v_current["v_x"] - v_prev["v_x"]
+                    
                     height_y = v_current["dy"] + v_prev["dy"]  # v_current = v_prev + dy 
                     v_prev["dy"] = 0    # Need to do this, otherwise dy values will be counted multiple times. 
                     v_current["dy"] = height_y

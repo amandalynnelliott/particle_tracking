@@ -94,9 +94,6 @@ print(f"Frames: {frames}")
 fps = video_fps(directory, video_name)
 print(f"Frames per second: {fps}")
 
-# Create text file and save fps to it.
-# with open(directory + "/" + "video_info.txt", 'w') as f:
-#     f.write("Frames per second: " + str(fps))
 
 # Get dimensions from first frame.
 first_frame = directory + "/frame0.jpg" 

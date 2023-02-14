@@ -479,12 +479,6 @@ if size_plt: tf.plot_brightness(size_plt, width, height, brightness_map_3D, fram
 
 # --------------------------------------------------------------------------
 
-
-print("Generating particle locations files...")
-# Save locations for each particle to a locations.csv file for runing the lofting_angle.py script on.
-
-locations_header = ['Locations']
-
 print()
 
 print("Done.")

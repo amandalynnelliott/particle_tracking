@@ -37,7 +37,7 @@ Where `V` is the external voltage applied when the particle lofted, and `d` is t
 
 ### Charging Lofting
 
-For particles that lofted during charging, particle charge cannot be calculated. There is a correction to the vertical velocity from A. Caroll, *Laboratory measurements of initial launch velocities of electrostatically 
+For particles that lofted during charging, particle charge cannot be calculated. There is a correction to the vertical velocity from A. Carroll, *Laboratory measurements of initial launch velocities of electrostatically 
 lofted dust on airless planetary bodies*, (2020).
 
 The vertical velocity correction is as follows:

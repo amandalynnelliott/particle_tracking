@@ -417,11 +417,6 @@ for N in range(0, frames_end - frames_start + 1):
                     temp_dv_m = temp_velocity_m - temp_velocity_prev_m
                     acceleration = temp_dv_m / dt #units: m/sec^2
 
-                    # ---------- Calculate theta (not accurate) ------
-                    # lofted_theta = np.arctan2(temp_v_y_m_updated, temp_v_x_m)  # Launch angle in radians.
-                    # lofted_theta = 180 * lofted_theta / pi                     # Launch angle in degrees.
-                    # if(lofted_theta > 90): lofted_theta = lofted_theta - 180
-
                     # ----------- Calculate phi ----------------------
                     phi = theo_phi(size_r, temp_velocity_m)
 
@@ -492,46 +487,4 @@ locations_header = ['Locations']
 
 print()
 
-# ---------------------------------
-# UNDER DEVELOPMENT: Automatically save particle locations to a file 
-# for running lofting_angle.py on.
-
-# N = 0
-# for particles_in_frame in particle_centers: # Loop through all saved locations for each frame.
-#     for particle in particles_in_frame:     # Loop through the individual particles in that frame.
-#         if particle.processed: continue
-
-#         # Make location file for this particle
-#         with open(directory + "/locations.csv", "w") as d:
-#             writer.writerow(header)
-
-#             # Append 'M' character for each missing frame, for each N
-#             for i in range(N):
-#                 writer.writerow(['M'])
-
-#             # Append particle.
-#             writer.writerow([particle])
-
-#         for next_frame_particles in particle_centers + 1:
-
-#             found = False
-
-#             for particle_2 in next_frame_particles:
-
-#                 if particle == particle_2:
-#                     found = True
-#                     particle_2.processed = True
-
-#                     # Append particle_2 location
-#                     writer.writerow([particle_2]) 
-
-#                     break
-
-#             if not found:
-#                 # Append 'M' : characrter for missing frame. 
-#                 writer.writerow(['M'])
-#     N = N + 1       
-
-# d.close()
-
-# print("Done.")
+print("Done.")

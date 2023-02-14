@@ -1,21 +1,21 @@
-Directory,Video Title,Frames per second,Beam Voltage,Beam Current,Dust Density,Camera Angle,Frame,"Size, diam",V_x,V_y,V,Lofted Angle,Phi,,
-[--],[--],[--],[V],[mA],[%],[deg],[--],[um],[cm/s],[cm/s],[cm/s],[deg],[V],,
-2022_08-05_silica_30percent,charging 100V 1mA.cine: clip1.avi,1500,100,1,30,83.99,`15-16,32.3,12.9,7.22,14.8,29.2,11.8,,GIF demo for charging script. 
-2022_08-05_silica_30percent,charging 100V 1mA.cine: clip0.avi,1500,100,1,30,83.99,`23-24,66.9,4.19,1.46,4.44,19.1,13.5,,
-2022_08-05_silica_30percent,charging 100V 1mA.cine: clip2.avi,1500,100,1,30,83.99,`17-18,81.5,20.4,2.97,20.6,8.3,76.5,,
-2022_08-05_silica_30percent,charging 100V 1mA.cine: clip3.avi,1500,100,1,30,83.99,`10-11,39.3,16.6,0.0167,16.6,0.06,29.7,,
-2022_08-05_silica_30percent,charging 100V 1mA.cine: clip4.avi,1500,100,1,30,83.99,`12-13,35.1,2.97,0.02,2.97,0.3,4.75,,
-2022_07-21_silica_79percent,charging 80 V 7mA.cine: clip1.avi,1500,80,7,80,84.3,`10-11,34.2,15.7,1.2,15.8,4.5,24.5,,Interesting horizontal motion before lofting. 
-2022_07-21_silica_79percent,charging 80 V 7mA.cine: clip1.avi,1500,80,7,80,84.3,`10-11,44.1,9.8,9.3,13.5,45.3,27,,
-2022_07-21_silica_79percent,charging 80 V 7mA.cine: clip2.avi,1500,80,7,80,84.3,`18-19,68.3,9.3,7.4,11.8,38.5,36.8,,
-2022_07-21_silica_79percent,charging 80 V 7mA.cine: clip2.avi,1500,80,7,80,84.3,`37-38,66.4,19.3,2.2,19.4,6.5,58.6,,
-2022_07-21_silica_79percent,charging 80 V 7mA.cine: clip3.avi,1500,80,7,80,84.3,`6-7,78.9,2.02,0.0075,2.02,0.2,7.24,,
-2022_07-21_silica_79percent,charging 80 V 7mA.cine: clip4.avi,1500,80,7,80,84.3,`8-9,37.8,4.29,0.00091,4.29,0.01,7.37,,
-2022_07-21_silica_79percent,charging 80 V 7mA.cine: clip5.avi,1500,80,7,80,84.3,`7-8,65.4,14.2,1.47,14.3,5.9,42.5,,
-2022_07-21_silica_79percent,charging 80 V 7mA.cine: clip6.avi,1500,80,7,80,84.3,`13-14,46.9,2.42,1.82,3.03,36.9,6.46,,
-2022_07-21_silica_79percent,charging 80 V 7mA.cine: clip7.avi,1500,80,7,80,84.3,`12-13,69.3,8.78,0.034,8.78,0.2,27.7,,
-2022_07-21_silica_79percent,charging 80 V 7mA.cine: clip8.avi,1500,80,7,80,84.3,`8-9,52.2,2.64,5.72E-05,2.65,0.001,6.29,,
-2022_07-21_silica_79percent,charging 80 V 7mA.cine: clip8.avi,1500,80,7,80,84.3,`53-54,84.4,4.77,0.14,4.78,1.63,18.3,,Right side 2 dust particles orbit each other. 
-2022_07-21_silica_79percent,charging 80 V 7mA.cine: clip9.avi,1500,80,7,80,84.3,`61-62,19.7,11.5,14.7,18.7,52.1,16.8,,
-2022_07-21_silica_79percent,charging 80 V 7mA.cine: clip10.avi,1500,80,7,80,84.3,`5-6,44.1,10.5,7.73E-05,10.5,0.0004,21.5,,
-2022_07-21_silica_79percent,charging 80 V 7mA.cine: clip11.avi,1500,80,7,80,84.3,`13-14,72.9,4.54,0,4.54,0,15.1,,Lofting angle at first is 0 deg and then is 49.8 deg. Which is correct?
+Directory,Video Title,Frames per second,Beam Voltage,Beam Current,Dust Density,Camera Angle,Frame,"Size, diam",V_x,V_y,V,Lofted Angle,Phi
+[--],[--],[--],[V],[mA],[%],[deg],[--],[um],[cm/s],[cm/s],[cm/s],[deg],[V]
+2022_08-05_silica_30percent,charging 100V 1mA.cine: clip1.avi,1500,100,1,30,83.99,`15-16,32.3,12.9,7.22,14.8,29.2,11.8
+2022_08-05_silica_30percent,charging 100V 1mA.cine: clip0.avi,1500,100,1,30,83.99,`23-24,66.9,4.19,1.46,4.44,19.1,13.5
+2022_08-05_silica_30percent,charging 100V 1mA.cine: clip2.avi,1500,100,1,30,83.99,`17-18,81.5,20.4,2.97,20.6,8.3,76.5
+2022_08-05_silica_30percent,charging 100V 1mA.cine: clip3.avi,1500,100,1,30,83.99,`10-11,39.3,16.6,0.0167,16.6,0.06,29.7
+2022_08-05_silica_30percent,charging 100V 1mA.cine: clip4.avi,1500,100,1,30,83.99,`12-13,35.1,2.97,0.02,2.97,0.3,4.75
+2022_07-21_silica_79percent,charging 80 V 7mA.cine: clip1.avi,1500,80,7,80,84.3,`10-11,34.2,15.7,1.2,15.8,4.5,24.5
+2022_07-21_silica_79percent,charging 80 V 7mA.cine: clip1.avi,1500,80,7,80,84.3,`10-11,44.1,9.8,9.3,13.5,45.3,27
+2022_07-21_silica_79percent,charging 80 V 7mA.cine: clip2.avi,1500,80,7,80,84.3,`18-19,68.3,9.3,7.4,11.8,38.5,36.8
+2022_07-21_silica_79percent,charging 80 V 7mA.cine: clip2.avi,1500,80,7,80,84.3,`37-38,66.4,19.3,2.2,19.4,6.5,58.6
+2022_07-21_silica_79percent,charging 80 V 7mA.cine: clip3.avi,1500,80,7,80,84.3,`6-7,78.9,2.02,0.0075,2.02,0.2,7.24
+2022_07-21_silica_79percent,charging 80 V 7mA.cine: clip4.avi,1500,80,7,80,84.3,`8-9,37.8,4.29,0.00091,4.29,0.01,7.37
+2022_07-21_silica_79percent,charging 80 V 7mA.cine: clip5.avi,1500,80,7,80,84.3,`7-8,65.4,14.2,1.47,14.3,5.9,42.5
+2022_07-21_silica_79percent,charging 80 V 7mA.cine: clip6.avi,1500,80,7,80,84.3,`13-14,46.9,2.42,1.82,3.03,36.9,6.46
+2022_07-21_silica_79percent,charging 80 V 7mA.cine: clip7.avi,1500,80,7,80,84.3,`12-13,69.3,8.78,0.034,8.78,0.2,27.7
+2022_07-21_silica_79percent,charging 80 V 7mA.cine: clip8.avi,1500,80,7,80,84.3,`8-9,52.2,2.64,5.72E-05,2.65,0.001,6.29
+2022_07-21_silica_79percent,charging 80 V 7mA.cine: clip8.avi,1500,80,7,80,84.3,`53-54,84.4,4.77,0.14,4.78,1.63,18.3
+2022_07-21_silica_79percent,charging 80 V 7mA.cine: clip9.avi,1500,80,7,80,84.3,`61-62,19.7,11.5,14.7,18.7,52.1,16.8
+2022_07-21_silica_79percent,charging 80 V 7mA.cine: clip10.avi,1500,80,7,80,84.3,`5-6,44.1,10.5,7.73E-05,10.5,0.0004,21.5
+2022_07-21_silica_79percent,charging 80 V 7mA.cine: clip11.avi,1500,80,7,80,84.3,`13-14,72.9,4.54,0,4.54,0,15.1

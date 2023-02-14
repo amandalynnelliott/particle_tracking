@@ -44,7 +44,7 @@ The vertical velocity correction is as follows:
 v_y_updated = math.sqrt(v_y ** 2 + (2 * g * H))
 ```
 
-Where `g` is the graviational acceleration, and `H` is the height that the particle has lofted to. The script will calculate this height of the lofted particle during it's trajectory.
+Where `g` is the gravitaional acceleration, and `H` is the height that the particle has lofted to. The script will calculate this height of the lofted particle during it's trajectory.
 
 For charging, the surface potential (denoted as Phi) is also calculated in volts.
 

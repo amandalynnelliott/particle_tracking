@@ -32,7 +32,7 @@ E = V/d
 ma = qE - mg
 ```
 
-Where `V` is the external voltage applied when the particle lofted, and `d` is the distance over which the velocity is applied, and `E` is the resulting electric field. For the equation of motion, `m` is mass, `q` is charge, and `g` is the gravitational acceleration constant.
+Where `V` is the external voltage applied when the particle lofted, and `d` is the distance over which the velocity is applied, and `E` is the resulting electric field. For the equation of motion, `m` is mass, `q` is charge, `a` is the particle's acceleration, and `g` is the gravitational acceleration constant.
 
 ### Charging Lofting
 
@@ -94,7 +94,7 @@ The scripts works best if only 20-30 frames are run at one time. The main direct
 
 Run the following command.
 
-```python
+```text
 python video_to_frames.py <directory> <video file name> --contrast <value>
 ```
 
@@ -108,13 +108,13 @@ The `--contrast` argument is optional. It may be necessary to increase the contr
 
 For a high voltage video, run:
 
-```python
+```text
 python high_voltage.py <directory> --start <first frame> --end <last frame> --movement <movement threshold> --dust <dust size threshold> --sizes <size start>-<size end>
 ```
 
 For a charging video, run:
 
-```python
+```text
 python charging.py <directory> --start <first frame> --end <last frame> --movement <movement threshold> --dust <dust size threshold> --sizes <size start>-<size end>
 ```
 
@@ -122,7 +122,7 @@ The particle tracking script will only run on the frames specified by `--start` 
 
 The optional input parameters are described below.
 
-`<movement threshold>` is the brightness range for tracking movement. The default value is 30. If the script is detecting noise as particles, decrease this number. If the script is not detecting moving particles, increase this number, or increase the contrast of the frames.
+`<movement threshold>` is the brightness range for tracking movement. The default value is 30. If the script is detecting noise as particles, increase this number. If the script is not detecting moving particles, decrease this number, or increase the contrast of the frames.
 
 `<dust size threshold>` is used for calculating the size of lofted particles. The default value is 5. If the size of the lofted particle is too small, increase this value. If the calculated size is too large, decrease it. The size calculation can be checked by using the next argument.
 
@@ -132,7 +132,7 @@ The optional input parameters are described below.
 
 For an example charging video, here is the command:
 
-```python
+```text
 python charging.py examples/charging/clip0 --start 40 --end 52 --movement 35 --dust 10 --sizes 42-43
 ```
 
@@ -168,7 +168,7 @@ Automatically generating locations files for each lofted particle could be devel
 
 Next, run the script:
 
-```python
+```text
 python lofting_angle.py <directory> --start <first frame> --end <last frame> 
 ```
 
